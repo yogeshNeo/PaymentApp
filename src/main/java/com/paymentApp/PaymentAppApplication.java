@@ -10,7 +10,7 @@ public class PaymentAppApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(PaymentAppApplication.class, args);
-        log.info("Order App Running on http://localhost:8081");
+        log.info("Payment App Running on http://localhost:8081");
     }
 
 }
