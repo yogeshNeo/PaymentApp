@@ -10,11 +10,13 @@ import com.paymentApp.model.PaymentEvent;
 import com.paymentApp.repository.PaymentRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Controller;
 
 @Slf4j
+@RefreshScope
 @Controller
 public class PaymentController {
 
